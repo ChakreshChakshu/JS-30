@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25 - Product Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="catalog-header">
+      <span class="badge">Level 3 &bull; Intermediate Browser JavaScript</span>
+      <h1>Product Catalog</h1>
+      <p class="subtitle">Filter, search, and sort products dynamically.</p>
+    </header>
+
+    <div class="controls-bar">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search products...">
+
+      <div class="category-pills" id="categoryPills">
+        <button type="button" class="pill active" data-cat="all">All</button>
+        <button type="button" class="pill" data-cat="Electronics">Electronics</button>
+        <button type="button" class="pill" data-cat="Apparel">Apparel</button>
+        <button type="button" class="pill" data-cat="Books">Books</button>
+        <button type="button" class="pill" data-cat="Home">Home</button>
+      </div>
+
+      <div class="sort-wrapper">
+        <label for="sortSelect">Sort:</label>
+        <select id="sortSelect">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low &rarr; High</option>
+          <option value="price-desc">Price: High &rarr; Low</option>
+          <option value="name-asc">Name: A &rarr; Z</option>
+          <option value="name-desc">Name: Z &rarr; A</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

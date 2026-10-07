@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12 - Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 2 &bull; Core JavaScript</span>
+    <h1>Rock Paper Scissors</h1>
+    <p class="subtitle">Choose your move to play against the computer.</p>
+
+    <div class="scoreboard">
+      <div class="score-card">
+        <span class="score-title">Player</span>
+        <span class="score-num" id="playerScore">0</span>
+      </div>
+      <div class="score-card">
+        <span class="score-title">Draws</span>
+        <span class="score-num" id="drawsScore">0</span>
+      </div>
+      <div class="score-card">
+        <span class="score-title">Computer</span>
+        <span class="score-num" id="computerScore">0</span>
+      </div>
+    </div>
+
+    <div class="battlefield">
+      <div class="choice-slot">
+        <span class="label">You Picked:</span>
+        <span class="choice-icon" id="playerChoiceDisplay">&quest;</span>
+      </div>
+      <div class="vs">VS</div>
+      <div class="choice-slot">
+        <span class="label">Computer Picked:</span>
+        <span class="choice-icon" id="computerChoiceDisplay">&quest;</span>
+      </div>
+    </div>
+
+    <div class="result-message" id="resultMessage">Select your weapon below!</div>
+
+    <div class="weapons">
+      <button type="button" class="btn-weapon" data-choice="rock" aria-label="Rock">&#9994; Rock</button>
+      <button type="button" class="btn-weapon" data-choice="paper" aria-label="Paper">&#9995; Paper</button>
+      <button type="button" class="btn-weapon" data-choice="scissors" aria-label="Scissors">&#9996; Scissors</button>
+    </div>
+
+    <button type="button" class="btn btn-secondary reset-btn" id="resetBtn">Reset Scores</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

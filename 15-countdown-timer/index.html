@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15 - Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 2 &bull; Core JavaScript</span>
+    <h1>Countdown Timer</h1>
+    <p class="subtitle">Set your duration and start the countdown.</p>
+
+    <div class="time-display" id="timeDisplay">05:00</div>
+    <div class="status-msg" id="statusMsg"></div>
+
+    <div class="input-row">
+      <label for="secondsInput">Seconds:</label>
+      <input type="number" id="secondsInput" min="1" max="7200" value="300">
+      <button type="button" class="btn btn-secondary" id="setBtn">Set</button>
+    </div>
+
+    <div class="controls">
+      <button type="button" class="btn btn-success" id="startBtn">Start</button>
+      <button type="button" class="btn btn-warning" id="pauseBtn" disabled>Pause</button>
+      <button type="button" class="btn btn-secondary" id="resetBtn">Reset</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

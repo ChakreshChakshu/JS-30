@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>23 - Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 3 &bull; Intermediate Browser JavaScript</span>
+    <h1>Expense Tracker</h1>
+    <p class="subtitle">Track income, expenses, and current net balance.</p>
+
+    <div class="balance-card">
+      <span class="balance-label">Your Balance</span>
+      <h2 class="balance-amount" id="balance">$0.00</h2>
+    </div>
+
+    <div class="summary-grid">
+      <div class="summary-box income">
+        <span class="summary-title">Income</span>
+        <strong id="totalIncome">+$0.00</strong>
+      </div>
+      <div class="summary-box expense">
+        <span class="summary-title">Expense</span>
+        <strong id="totalExpense">-$0.00</strong>
+      </div>
+    </div>
+
+    <form id="transactionForm" class="transaction-form">
+      <h3>Add New Transaction</h3>
+      <div class="form-group">
+        <label for="descInput">Description</label>
+        <input type="text" id="descInput" placeholder="Salary, Groceries, Rent..." required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="amountInput">Amount ($)</label>
+          <input type="number" id="amountInput" min="0.01" step="0.01" placeholder="0.00" required>
+        </div>
+        <div class="form-group">
+          <label for="typeInput">Type</label>
+          <select id="typeInput">
+            <option value="expense">Expense</option>
+            <option value="income">Income</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Transaction</button>
+    </form>
+
+    <div class="history-section">
+      <h3>History</h3>
+      <ul class="history-list" id="historyList">
+        <li class="empty-state">No transactions recorded.</li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17 - Word Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 2 &bull; Core JavaScript</span>
+    <h1>Word Counter</h1>
+    <p class="subtitle">Detailed text analytics and reading time estimate.</p>
+
+    <textarea id="textInput" rows="7" placeholder="Type or paste your text here..."></textarea>
+
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <span class="metric-val" id="wordCount">0</span>
+        <span class="metric-label">Words</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val" id="charCount">0</span>
+        <span class="metric-label">Characters</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val" id="charNoSpaceCount">0</span>
+        <span class="metric-label">No Spaces</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val" id="paragraphCount">0</span>
+        <span class="metric-label">Paragraphs</span>
+      </div>
+    </div>
+
+    <div class="reading-time">
+      <span>Estimated Reading Time:</span>
+      <strong id="readingTime">0 min 0 sec</strong>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

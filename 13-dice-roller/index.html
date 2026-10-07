@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13 - Dice Roller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 2 &bull; Core JavaScript</span>
+    <h1>Dice Roller</h1>
+    <p class="subtitle">Roll a virtual 6-sided die and track history.</p>
+
+    <div class="dice-container">
+      <div class="dice" id="dice">1</div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="rollBtn">Roll Dice</button>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">Total Rolls</span>
+        <span class="stat-val" id="totalRolls">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Average</span>
+        <span class="stat-val" id="averageRoll">0.0</span>
+      </div>
+    </div>
+
+    <div class="history-section">
+      <div class="history-header">
+        <span class="history-title">Roll History</span>
+        <button type="button" class="clear-history-btn" id="clearHistoryBtn">Clear</button>
+      </div>
+      <div class="history-list" id="historyList">
+        <p class="empty-state">No rolls yet.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

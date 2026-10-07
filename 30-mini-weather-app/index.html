@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30 - Mini Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 3 &bull; Intermediate Browser JavaScript</span>
+    <h1>Weather Forecast</h1>
+    <p class="subtitle">Search city weather using the free Open-Meteo API.</p>
+
+    <form id="weatherForm" class="search-form">
+      <input type="text" id="cityInput" placeholder="Enter city name (e.g., Tokyo, Paris)..." required>
+      <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+    </form>
+
+    <div class="quick-cities">
+      <button type="button" class="city-chip" data-city="London">London</button>
+      <button type="button" class="city-chip" data-city="Tokyo">Tokyo</button>
+      <button type="button" class="city-chip" data-city="New York">New York</button>
+      <button type="button" class="city-chip" data-city="Paris">Paris</button>
+    </div>
+
+    <!-- Loading State -->
+    <div class="state-box" id="loadingState" style="display: none;">
+      <div class="spinner"></div>
+      <p>Fetching weather data...</p>
+    </div>
+
+    <!-- Error State -->
+    <div class="state-box error-box" id="errorState" style="display: none;">
+      <span class="error-icon">&#9888;</span>
+      <p id="errorMsg">City not found. Please try another search.</p>
+    </div>
+
+    <!-- Weather Display Card -->
+    <div class="weather-result" id="weatherResult" style="display: none;">
+      <div class="result-header">
+        <h2 id="cityName">London, UK</h2>
+        <span class="weather-icon" id="weatherIcon">&#9728;</span>
+      </div>
+
+      <div class="temp-display">
+        <span class="temp-value" id="temperature">18</span>
+        <span class="temp-unit">&deg;C</span>
+      </div>
+
+      <div class="condition-badge" id="conditionText">Clear Sky</div>
+
+      <div class="weather-metrics">
+        <div class="metric-card">
+          <span class="metric-title">Humidity</span>
+          <strong id="humidity">65%</strong>
+        </div>
+        <div class="metric-card">
+          <span class="metric-title">Wind Speed</span>
+          <strong id="windSpeed">12 km/h</strong>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

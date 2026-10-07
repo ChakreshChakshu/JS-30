@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>22 - Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <span class="badge">Level 3 &bull; Intermediate Browser JavaScript</span>
+      <h1>Notes App</h1>
+      <p class="subtitle">Capture thoughts with real-time search &amp; localStorage persistence.</p>
+      <input type="text" id="searchInput" class="search-input" placeholder="Search notes by title or text...">
+    </header>
+
+    <div class="layout-grid">
+      <section class="form-section">
+        <form id="noteForm" class="card note-form">
+          <h2 id="formTitle">Create New Note</h2>
+          <input type="hidden" id="editNoteId">
+          <div class="form-group">
+            <label for="noteTitle">Title</label>
+            <input type="text" id="noteTitle" placeholder="Note title" required>
+          </div>
+          <div class="form-group">
+            <label for="noteBody">Content</label>
+            <textarea id="noteBody" rows="5" placeholder="Write your note..." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" id="cancelEditBtn" style="display: none;">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="saveNoteBtn">Save Note</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="notes-grid" id="notesGrid">
+        <p class="empty-state">No notes found. Create your first note!</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

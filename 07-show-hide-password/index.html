@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07 - Show/Hide Password</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 1 &bull; DOM &amp; Events</span>
+    <h1>Password Visibility</h1>
+    <p class="subtitle">Toggle between masked password and plain text.</p>
+
+    <div class="form-group">
+      <label for="passwordInput">Password</label>
+      <div class="input-wrapper">
+        <input type="password" id="passwordInput" placeholder="Enter your secret password">
+        <button type="button" id="toggleBtn" class="toggle-btn" aria-label="Show password">Show</button>
+      </div>
+    </div>
+
+    <div class="strength-bar-wrapper">
+      <div class="strength-bar" id="strengthBar"></div>
+    </div>
+    <span class="strength-text" id="strengthText">Password Strength: Empty</span>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21 - Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 3 &bull; Intermediate Browser JavaScript</span>
+    <h1>Todo List</h1>
+    <p class="subtitle">Organize tasks with filtering and event delegation.</p>
+
+    <form id="todoForm" class="todo-form">
+      <input type="text" id="todoInput" placeholder="What needs to be done?" required>
+      <button type="submit" class="btn btn-primary" id="addBtn">Add</button>
+    </form>
+
+    <div class="filters-bar">
+      <div class="filter-buttons">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="active">Active</button>
+        <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+      <button type="button" class="clear-completed-btn" id="clearCompletedBtn">Clear Completed</button>
+    </div>
+
+    <ul class="todo-list" id="todoList">
+      <li class="empty-state">No tasks to display.</li>
+    </ul>
+
+    <div class="footer-bar">
+      <span id="activeCount">0 items left</span>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

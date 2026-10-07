@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16 - Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 2 &bull; Core JavaScript</span>
+    <h1>Password Generator</h1>
+    <p class="subtitle">Generate strong, secure passwords with custom criteria.</p>
+
+    <div class="result-box">
+      <span class="password-output" id="passwordOutput">Click Generate</span>
+      <button type="button" class="copy-btn" id="copyBtn" title="Copy to clipboard">Copy</button>
+    </div>
+
+    <div class="setting-row">
+      <label for="lengthSlider">Length: <strong id="lengthValue">16</strong></label>
+      <input type="range" id="lengthSlider" min="6" max="32" value="16">
+    </div>
+
+    <div class="checkbox-grid">
+      <label class="checkbox-label">
+        <input type="checkbox" id="includeUpper" checked>
+        <span>Uppercase (A-Z)</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="includeLower" checked>
+        <span>Lowercase (a-z)</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="includeNumbers" checked>
+        <span>Numbers (0-9)</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="includeSymbols" checked>
+        <span>Symbols (!@#$)</span>
+      </label>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="generateBtn">Generate Password</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

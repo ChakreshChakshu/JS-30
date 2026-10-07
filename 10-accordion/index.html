@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 - Accordion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 1 &bull; DOM &amp; Events</span>
+    <h1>Frequently Asked Questions</h1>
+    <p class="subtitle">Click any question to view its detailed answer.</p>
+
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item active">
+        <button class="accordion-header" aria-expanded="true">
+          <span>What is the DOM in JavaScript?</span>
+          <span class="icon">&minus;</span>
+        </button>
+        <div class="accordion-body">
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so programs can change the document structure, style, and content dynamically.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span>What is event delegation?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Event delegation is a pattern of handling events at a higher level in the DOM tree than the elements on which the event originated, taking advantage of event bubbling.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span>What is the difference between let and const?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Both `let` and `const` provide block-scoped variables. `let` permits reassignment, while `const` creates a read-only reference that cannot be reassigned.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span>How does localStorage work?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>The `localStorage` property allows you to access a Storage object for the Document's origin. Stored data is saved across browser sessions with no expiration date.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

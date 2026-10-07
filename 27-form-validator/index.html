@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>27 - Form Validator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 3 &bull; Intermediate Browser JavaScript</span>
+    <h1>Account Registration</h1>
+    <p class="subtitle">Complete the fields below to create your account.</p>
+
+    <div class="success-banner" id="successBanner" style="display: none;">
+      &#10004; Account registered successfully!
+    </div>
+
+    <form id="regForm" novalidate>
+      <div class="form-control">
+        <label for="nameInput">Full Name</label>
+        <input type="text" id="nameInput" placeholder="Jane Doe">
+        <small class="error-msg" id="nameError"></small>
+      </div>
+
+      <div class="form-control">
+        <label for="emailInput">Email Address</label>
+        <input type="email" id="emailInput" placeholder="jane@example.com">
+        <small class="error-msg" id="emailError"></small>
+      </div>
+
+      <div class="form-control">
+        <label for="passwordInput">Password</label>
+        <input type="password" id="passwordInput" placeholder="Min 8 characters">
+        <small class="error-msg" id="passwordError"></small>
+      </div>
+
+      <div class="form-control">
+        <label for="confirmInput">Confirm Password</label>
+        <input type="password" id="confirmInput" placeholder="Re-enter password">
+        <small class="error-msg" id="confirmError"></small>
+      </div>
+
+      <div class="form-control">
+        <label for="phoneInput">Phone Number</label>
+        <input type="tel" id="phoneInput" placeholder="10-digit number">
+        <small class="error-msg" id="phoneError"></small>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="submitBtn">Create Account</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

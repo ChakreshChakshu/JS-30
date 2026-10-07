@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Character Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 1 &bull; DOM &amp; Events</span>
+    <h1>Character Counter</h1>
+    <p class="subtitle">Type below to track characters, remaining limit, and words.</p>
+
+    <div class="textarea-wrapper">
+      <textarea id="textInput" maxlength="200" placeholder="Type or paste your text here..." rows="6"></textarea>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <span class="stat-label">Characters</span>
+        <span class="stat-value" id="charCount">0</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Remaining</span>
+        <span class="stat-value" id="remainingCount">200</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Words</span>
+        <span class="stat-value" id="wordCount">0</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button type="button" class="btn btn-secondary" id="clearBtn">Clear Text</button>
+      <button type="button" class="btn btn-primary" id="copyBtn">Copy Text</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

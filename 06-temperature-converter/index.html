@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06 - Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 1 &bull; DOM &amp; Events</span>
+    <h1>Temperature Converter</h1>
+    <p class="subtitle">Convert between Celsius and Fahrenheit instantaneously.</p>
+
+    <div class="converter-grid">
+      <div class="unit-group">
+        <label for="celsiusInput">Celsius (&deg;C)</label>
+        <input type="number" id="celsiusInput" placeholder="0" step="any">
+      </div>
+
+      <div class="arrow">&harr;</div>
+
+      <div class="unit-group">
+        <label for="fahrenheitInput">Fahrenheit (&deg;F)</label>
+        <input type="number" id="fahrenheitInput" placeholder="32" step="any">
+      </div>
+    </div>
+
+    <div class="formula-box">
+      <span class="formula-label">Formulas:</span>
+      <p>&deg;F = (&deg;C &times; 9/5) + 32</p>
+      <p>&deg;C = (&deg;F - 32) &times; 5/9</p>
+    </div>
+
+    <button type="button" class="btn btn-secondary" id="clearBtn">Clear</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

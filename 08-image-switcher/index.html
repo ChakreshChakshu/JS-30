@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08 - Image Switcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 1 &bull; DOM &amp; Events</span>
+    <h1>Image Switcher</h1>
+    <p class="subtitle">Navigate through the visual slide gallery.</p>
+
+    <div class="gallery-wrapper">
+      <div class="image-frame" id="imageFrame"></div>
+      <div class="meta-overlay">
+        <span class="caption" id="caption">Sunset Peaks</span>
+        <span class="counter" id="counter">1 / 5</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button type="button" class="btn" id="prevBtn" disabled>&larr; Previous</button>
+      <div class="dots-container" id="dotsContainer"></div>
+      <button type="button" class="btn" id="nextBtn">Next &rarr;</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

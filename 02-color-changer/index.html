@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 - Color Changer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 1 &bull; DOM &amp; Events</span>
+    <h1>Color Changer</h1>
+    <p class="subtitle">Click the button below to generate a new random background color.</p>
+
+    <div class="color-preview" id="colorPreview" aria-label="Color Preview Box"></div>
+
+    <div class="color-info">
+      <span class="label">Current Color:</span>
+      <span class="color-code" id="colorCode">#4F46E5</span>
+    </div>
+
+    <div class="actions">
+      <button type="button" class="btn btn-primary" id="changeBtn">Generate Color</button>
+      <button type="button" class="btn btn-outline" id="copyBtn">Copy Code</button>
+    </div>
+
+    <div class="history-container">
+      <span class="history-label">Recent Colors:</span>
+      <div class="history-list" id="historyList"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

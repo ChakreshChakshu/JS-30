@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>28 - Tabs Component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 3 &bull; Intermediate Browser JavaScript</span>
+    <h1>Product Details</h1>
+    <p class="subtitle">Click the tabs below to switch between content panels.</p>
+
+    <div class="tabs-container">
+      <div class="tab-list" role="tablist" aria-label="Product Information Tabs">
+        <button type="button" class="tab-btn active" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true">Overview</button>
+        <button type="button" class="tab-btn" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false">Features</button>
+        <button type="button" class="tab-btn" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false">Specs</button>
+        <button type="button" class="tab-btn" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false">Reviews</button>
+      </div>
+
+      <div class="tab-panels">
+        <section class="tab-panel active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+          <h3>Product Overview</h3>
+          <p>The Developer Pro Mechanical Keyboard is engineered for programmers, writers, and power users who demand precision, tactile satisfaction, and rock-solid endurance.</p>
+        </section>
+
+        <section class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+          <h3>Key Features</h3>
+          <ul>
+            <li>Hot-swappable custom tactile switches</li>
+            <li>Double-shot PBT keycaps with crisp legends</li>
+            <li>Customizable per-key RGB backlighting</li>
+            <li>Programmable macro layers and QMK/VIA support</li>
+          </ul>
+        </section>
+
+        <section class="tab-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+          <h3>Technical Specifications</h3>
+          <ul>
+            <li>Connectivity: USB-C wired &amp; Bluetooth 5.2</li>
+            <li>Battery: 4000mAh rechargeable (up to 200 hours)</li>
+            <li>Layout: 75% compact ANSI format</li>
+            <li>Weight: 840g (aluminum chassis)</li>
+          </ul>
+        </section>
+
+        <section class="tab-panel" id="panel-4" role="tabpanel" aria-labelledby="tab-4" hidden>
+          <h3>Verified Customer Reviews</h3>
+          <p>"Best typing experience I have had in a decade of software engineering. The tactile feedback is crisp and the build quality is tank-like." &mdash; Alex M.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

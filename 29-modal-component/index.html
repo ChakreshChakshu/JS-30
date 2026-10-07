@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>29 - Modal Component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-content">
+    <span class="badge">Level 3 &bull; Intermediate Browser JavaScript</span>
+    <h1>Modal Dialog Component</h1>
+    <p class="subtitle">Click the button below to launch an interactive accessible modal.</p>
+
+    <button type="button" class="btn btn-primary" id="openModalBtn">Open Modal</button>
+  </main>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card" id="modalCard">
+      <div class="modal-header">
+        <h2 id="modalTitle">Confirm Action</h2>
+        <button type="button" class="close-btn" id="closeBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to deploy these changes to the production server? This operation will initiate a live rollout.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+        <button type="button" class="btn btn-success" id="confirmBtn">Confirm Deploy</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

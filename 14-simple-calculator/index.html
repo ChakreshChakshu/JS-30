@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14 - Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 2 &bull; Core JavaScript</span>
+    <h1>Calculator</h1>
+
+    <div class="calculator-display">
+      <div class="previous-operand" id="previousOperand"></div>
+      <div class="current-operand" id="currentOperand">0</div>
+    </div>
+
+    <div class="keypad">
+      <button type="button" class="btn btn-action" data-action="clear">C</button>
+      <button type="button" class="btn btn-action" data-action="delete">DEL</button>
+      <button type="button" class="btn btn-operator" data-operator="/">&divide;</button>
+      <button type="button" class="btn btn-operator" data-operator="*">&times;</button>
+
+      <button type="button" class="btn btn-num" data-num="7">7</button>
+      <button type="button" class="btn btn-num" data-num="8">8</button>
+      <button type="button" class="btn btn-num" data-num="9">9</button>
+      <button type="button" class="btn btn-operator" data-operator="-">&minus;</button>
+
+      <button type="button" class="btn btn-num" data-num="4">4</button>
+      <button type="button" class="btn btn-num" data-num="5">5</button>
+      <button type="button" class="btn btn-num" data-num="6">6</button>
+      <button type="button" class="btn btn-operator" data-operator="+">+</button>
+
+      <button type="button" class="btn btn-num" data-num="1">1</button>
+      <button type="button" class="btn btn-num" data-num="2">2</button>
+      <button type="button" class="btn btn-num" data-num="3">3</button>
+      <button type="button" class="btn btn-equals" data-action="equals">=</button>
+
+      <button type="button" class="btn btn-num btn-zero" data-num="0">0</button>
+      <button type="button" class="btn btn-num" data-num=".">.</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

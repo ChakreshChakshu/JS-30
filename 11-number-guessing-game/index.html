@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 - Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 2 &bull; Core JavaScript</span>
+    <h1>Number Guessing Game</h1>
+    <p class="subtitle">I am thinking of a number between 1 and 100. Can you guess it?</p>
+
+    <div class="feedback-box" id="feedback">Enter your guess below to start!</div>
+
+    <form id="guessForm" class="guess-form">
+      <input type="number" id="guessInput" min="1" max="100" placeholder="1 - 100" required>
+      <button type="submit" class="btn btn-primary" id="submitBtn">Guess</button>
+    </form>
+
+    <div class="stats-row">
+      <span>Attempts: <strong id="attemptCount">0</strong></span>
+      <span>Previous: <span id="guessesList">None</span></span>
+    </div>
+
+    <button type="button" class="btn btn-secondary restart-btn" id="restartBtn">Play Again</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

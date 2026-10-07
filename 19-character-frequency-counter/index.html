@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>19 - Character Frequency Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Level 2 &bull; Core JavaScript</span>
+    <h1>Character Frequency Counter</h1>
+    <p class="subtitle">Analyze the frequency and percentage distribution of characters.</p>
+
+    <textarea id="textInput" rows="4" placeholder="Enter text to analyze..."></textarea>
+
+    <div class="options">
+      <label class="checkbox-label">
+        <input type="checkbox" id="ignoreSpaces" checked>
+        <span>Ignore Whitespace</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="caseInsensitive" checked>
+        <span>Case Insensitive</span>
+      </label>
+    </div>
+
+    <div class="results-container">
+      <div class="results-header">
+        <span>Char</span>
+        <span>Count</span>
+        <span>Percentage</span>
+      </div>
+      <div class="frequency-list" id="frequencyList">
+        <p class="empty-state">Type text above to view frequency distribution.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

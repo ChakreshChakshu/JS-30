@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01 - Counter App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="card-header">
+      <span class="badge">Level 1 &bull; DOM &amp; Events</span>
+      <h1>Counter App</h1>
+      <p class="subtitle">Click the buttons or use keyboard arrows to adjust the count.</p>
+    </header>
+
+    <div class="counter-display" id="countDisplay" aria-live="polite">0</div>
+
+    <div class="button-group">
+      <button type="button" class="btn btn-danger" id="decrementBtn" aria-label="Decrease count">-1</button>
+      <button type="button" class="btn btn-secondary" id="resetBtn" aria-label="Reset count">Reset</button>
+      <button type="button" class="btn btn-success" id="incrementBtn" aria-label="Increase count">+1</button>
+    </div>
+
+    <div class="step-control">
+      <label for="stepInput">Step value:</label>
+      <input type="number" id="stepInput" value="1" min="1" max="100">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
